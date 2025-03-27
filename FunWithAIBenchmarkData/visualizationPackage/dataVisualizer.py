@@ -1,23 +1,23 @@
 # File Name : dataVisualizer.py
 # Student Name: Dylan Sams, Liam Vasey, Matthew Boutros
-# email:  
+# email:  samsds@mail.uc.edu, vaseylh@mail.uc.edu, boutromw@mail.uc.edu
 # Assignment Number: Assignment 08
 # Due Date:   3/27/2025
 # Course #/Section:   IS 4010 001
 # Semester/Year:  Spring 2025
-# Brief Description of the assignment:
+# Brief Description of the assignment: This assignment is about displaying an image of our team name and creating a visualization of the data using modularity.
 
-# Brief Description of what this module does:
-# Citations: 
+# Brief Description of what this module does: This module reads AI benchmark data from a CSV file, generates bar chart when called by main
+# Citations: We used chatgpt.com and chat.deepseek.com as our models
 
-# Anything else that's relevant:
+# Anything else that's relevant: Must pip install pandas and matplotlib
 import csv
 import pandas as pd
 import matplotlib.pyplot as plt
 
 def visualize_ai_scores_by_manufacturer():
     try:
-        df = pd.read_csv('AI-Benchmarks.csv')  # Make sure this path is correct
+        df = pd.read_csv('visualizationPackage/AI-Benchmarks.csv')  # Make sure this path is correct
         df = df[['Chipset Manufacturer', 'AI Score']].dropna()
 
         # Group by manufacturer and calculate average

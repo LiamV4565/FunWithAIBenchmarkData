@@ -1,6 +1,6 @@
 # File Name : teamImage.py
 # Student Name: Dylan Sams, Liam Vasey, Matthew Boutros
-# email:  samsds@mail.uc.edu
+# email:  samsds@mail.uc.edu, vaseylh@mail.uc.edu, boutromw@mail.uc.edu
 # Assignment Number: Assignment 08
 # Due Date:   3/27/2025
 # Course #/Section:   IS 4010 001
@@ -19,7 +19,7 @@ def team_image():
     """
     opens the image and shows image
     """
-    image = Image.open("sandslash.jpg")
+    image = Image.open("visualizationPackage/sandslash.jpg")
     
     resized = image.resize((200,200))
     

@@ -7,7 +7,7 @@ from utilitiesPackage.utilities import *
 from utilitiesPackage.CSV_Utilities import *
 from PDFPackage.PDFUtilities import *
 from visualizationPackage.dataVisualizer import visualize_ai_scores_by_manufacturer
-
+from visualizationPackage.teamImage import *
 
 
 
@@ -66,5 +66,6 @@ if __name__ == "__main__":
     for key in reading_level_indices.keys():
         print(key, ":", reading_level_indices[key])
     """
-    def main():
-        visualize_ai_scores_by_manufacturer()
+    team_image()
+    visualize_ai_scores_by_manufacturer()
+  
